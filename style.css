@@ -1,0 +1,329 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+  /* background-color: rgb(30, 138, 230); */
+  background-color: forestgreen;
+}
+
+img{
+  width: 1920px;
+  height: 1080px;
+  background-repeat: repeat;
+  background: url("blue.png") fixed repeat;
+  object-fit: contain;
+}
+
+#pink{
+  width: 1920px;
+  height: 1080px;
+  background-repeat: repeat;
+  background: url("purple.png") fixed repeat;
+  object-fit: contain;
+}
+
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100vw;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  /* cursor: pointer;
+  position: absolute;
+  top: 75%;
+  padding: 1.5rem;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  font-family: Helvetica Neue;
+  flex: 1 1 0;
+  text-align: center; */
+  cursor: pointer;
+  position: absolute;
+  font-family: Helvetica Neue;
+  top: 90vh;
+  padding: 1.5rem;
+  text-align: center;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  padding-right: 40vw;
+  border-radius: 3px 0 0 3px;
+}
+.prev {
+  left: 0;
+  padding-left: 40vw;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Caption text */
+a {
+  color: white;
+  font-family: Helvetica Neue;
+  font-style: bold;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  font-family: Helvetica Neue;
+  position: absolute;
+  top: 45vh;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-height: 100%;
+  height: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: 1em;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  -webkit-animation: fade 1s;
+  animation: fade 1s;
+  color: white;
+}
+
+.numbertextcolour {
+  font-family: Helvetica Neue;
+  position: absolute;
+  top: 45vh;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: auto;
+  overflow-y: auto;
+  padding: 1em;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  -webkit-animation: fade 1s;
+  animation: fade 1s;
+  color: white;
+}
+
+/* Hidden text  */
+.tooltip {
+font-family: Helvetica Neue;
+  font-size: 2.5rem;
+  text-align: center;
+  height: auto;
+  display: inline;
+  border-bottom: 5px dotted white;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  top: 50%;
+  width: auto;
+  text-align: center;
+  background-color: green;
+  color: #fff;
+  max-width: calc(100% - 1em);
+  padding: 0.25em 0.5em;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-100%, -50%);
+  /* Hidden text  */
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.s;
+}
+
+@keyframes fade {
+  from {opacity: .1} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 10px;
+}
+
+  /* default-small devices */
+
+[class*="col"]{
+  grid-column-end: span 12;
+}
+
+/* below 600px typically tablet */
+@media only screen and (max-width: 600px){
+
+      .sm1{
+        grid-column-end: span 12;
+      }
+      .sm2{
+        grid-column-end: span 6;
+      }
+      .sm3{
+        grid-column-end: span 4;
+      }
+      .sm4{
+        grid-column-end: span 3;
+      }
+      .sm6{
+        grid-column-end: span 2;
+      }
+      .sm12{
+        grid-column-end: span 1;
+      }
+
+  .prev, .next {
+    /* cursor: pointer;
+    position: absolute;
+    top: 75%;
+    padding: 1.5rem;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    font-family: Helvetica Neue;
+    flex: 1 1 0;
+    text-align: center; */
+    cursor: pointer;
+    position: absolute;
+    font-family: Helvetica Neue;
+    top: 75vh;
+    padding: 1.5rem;
+    text-align: center;
+    user-select: none;
+  }
+
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    padding-right: 25vw;
+    border-radius: 3px 0 0 3px;
+  }
+  .prev {
+    left: 0;
+    padding-left: 25vw;
+    border-radius: 3px 0 0 3px;
+  }
+
+  /* Number text (1/3 etc) */
+  .numbertext {
+    font-family: Helvetica Neue;
+    position: absolute;
+    top: 45vh;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-height: 100%;
+    height: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 1em;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    -webkit-animation: fade 1s;
+    animation: fade 1s;
+    color: white;
+  }
+  .numbertextcolour {
+    font-family: Helvetica Neue;
+    position: absolute;
+    top: 45vh;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: auto;
+    overflow-y: auto;
+    padding: 1em;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    -webkit-animation: fade 1s;
+    animation: fade 1s;
+    color: white;
+  }
+  
+}
+
+/* above 601px typically tablet */
+@media only screen and (min-width: 601px){
+
+      .md1{
+        grid-column-end: span 12;
+
+      }
+      .md2{
+        grid-column-end: span 6;
+      }
+      .md3{
+        grid-column-end: span 4;
+      }
+      .md4{
+        grid-column-end: span 3;
+      }
+      .md6{
+        grid-column-end: span 2;
+      }
+      .md12{
+        grid-column-end: span 1;
+      }
+  }
+
+  /* above 1025px typically desktop */
+  @media only screen and (min-width: 1025px){
+
+      .col1{
+        grid-column-end: span 12;
+      }
+      .col2{
+        grid-column-end: span 6;
+      }
+      .col3{
+        grid-column-end: span 4;
+      }
+      .col4{
+        grid-column-end: span 3;
+      }
+      .col6{
+        grid-column-end: span 2;
+      }
+      .col12{
+        grid-column-end: span 1;
+      }
+}

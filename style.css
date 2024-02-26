@@ -278,6 +278,15 @@ font-family: Helvetica Neue;
     animation: fade 1s;
     color: white;
   }
+
+  .tooltip {
+  font-family: Helvetica Neue;
+    font-size: 1.5rem;
+    text-align: center;
+    height: auto;
+    display: inline;
+    border-bottom: 2px dotted white;
+  }
   
 }
 

@@ -15,14 +15,6 @@ img{
   object-fit: contain;
 }
 
-#pink{
-  width: 1920px;
-  height: 1080px;
-  background-repeat: repeat;
-  background: url("purple.png") fixed repeat;
-  object-fit: contain;
-}
-
 
 
 /* Slideshow container */
@@ -279,14 +271,33 @@ font-family: Helvetica Neue;
     color: white;
   }
 
+  /* Hidden text  */
   .tooltip {
   font-family: Helvetica Neue;
+    visibility: visible;
     font-size: 1.5rem;
     text-align: center;
     height: auto;
     display: inline;
-    border-bottom: 2px dotted white;
+    border-bottom: 5px dotted white;
   }
+
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    top: 50%;
+    width: auto;
+    text-align: center;
+    background-color: green;
+    color: #fff;
+    max-width: calc(100% - 1em);
+    padding: 0.25em 0.5em;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-100%, -50%);
+
+    .tooltip:hover .tooltiptext {
+      visibility: visible;
+    }
+    /* Hidden text  */
   
 }
 
